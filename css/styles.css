@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&family=Montserrat:wght@100;200;300&family=Raleway&display=swap');
+
+
+/* resetting elements and global declarations*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar h1 {
+    font-family: 'Libre Barcode 39 Extended Text';
+}
+
+body {
+    font-family: 'Montserrat' sans-serif;
+    columns: #fff;
+    line-height: 1.6;
+    background-image: url(../images/pattern-gif.gif);
+    ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1,
+h2 {
+    font-weight: 200;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+/* nav bar */
+
+.navbar {
+    background-color: #000;
+    color: #fff;
+    height: 70px;
+    position: sticky;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar li a:hover {
+    border-bottom: 2px greenyellow solid;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.showcase .container {
+    text-align: left;
+}
+
+.is-active {
+    border-bottom: 2px greenyellow solid;
+}
+
+
+/* Main Content */
+
+.button {
+    background-color: #000;
+    border: 1px solid #adff2f;
+    color: greenyellow;
+    padding: 12px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.875rem;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button-link {
+    color: greenyellow;
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: rgba(172, 255, 47, 0.806);
+    color: #000;
+}
+
+.button-link:hover {
+    text-decoration: underline;
+}
+
+.myname {
+    color: #000;
+    -webkit-text-stroke: #fff;
+    -webkit-text-stroke-width: 1px;
+}
+
+.myname:hover {
+    color: greenyellow;
+    -webkit-text-stroke: greenyellow;
+}
+
+
+#designeruitext:hover,
+#devtext:hover {
+    color: greenyellow;
+}
+
+
+#designertext {
+    color: greenyellow;
+}
+
+.showcase {
+    height: 80vh;
+}
+
+.showcase h1 {
+    font-size: 3.25rem;
+    font-weight: 200;
+    color: rgb(210, 210, 210);
+}
+
+.showcase p {
+    color: #fff;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.showcase h2 {
+    color: #fff;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    text-align: start;
+}
+
+.showcase h4,
+.showcase ul {
+    color: #fff;
+    text-align: left;
+}
+
+.showcase a img {
+    width: 8%;
+}
+
+.showcase h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 100;
+}
+
+
+#bio-content {
+    padding: 80px 0px;
+}
+
+
+#mail-link:hover {
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+.border {
+    margin: 50px 0 0 0;
+    border: 0.5px solid #b0b0b0;
+    padding: 30px;
+    background-color: #0c0c0c;
+}
+
+/* Contact Page */
+
+#contact {
+    background: #000;
+    border: 1px solid #b0b0b0;
+    padding: 25px;
+    margin: 50px 0;
+}
+
+fieldset {
+    border: none;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea {
+    width: 100%;
+    background: #000;
+    border: 1px solid #b0b0b0;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #adff2f;
+}
+
+/* Footer */
+
+.footer {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 20vh;
+    position: sticky;
+}
+
+.footer #social-media-links {
+    display: flex;
+    align-items: center;
+}
+
+.footer a {
+    width: 40%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    grid-gap: 20px;
+}
+
+.grid-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    grid-gap: 20px;
+}
+
+
+
+/* For Responsiveness */
+@media(max-width: 600px) {
+    .navbar {
+        height: 110px;
+
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+
+    }
+
+    .navbar ul {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .grid,
+    .showcase .grid,
+    .grid-projects {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .showcase {
+        height: auto;
+    }
+
+    .showcase-text {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .showcase h4,
+    .showcase ul,
+    h1 {
+        text-align: center;
+    }
+
+    .showcase .container {
+        text-align: center;
+    }
+
+    .showcase p {
+        font-size: 0.875rem;
+    }
+
+    .showcase h1 {
+        font-size: 2rem;
+    }
+
+    #my-img {
+        display: none;
+    }
+
+}
